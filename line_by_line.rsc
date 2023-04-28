@@ -6,7 +6,7 @@
 
 /interface wireless enable numbers=wlan1,wlan2 
 
-#scan wireless networks  con connect  to ROS-6 or ROS-7  with mikrotik password
+#scan wireless networks  con connect  to ROS-6 or ROS-7  with mikrotik password in the default wireless rprofile
 
 /interface bridge
 add name=bridge1
