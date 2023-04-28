@@ -5,8 +5,10 @@
 #part1 (v6)
 
 /interface wireless enable numbers=wlan1,wlan2 
+/interface wireless security-profiles set numbers=0 authentication-types=wpa-psk,wpa2-psk wpa-pre-shared-key=mikrotik wpa2-pre-shared-key=mikrotik mode=dynamic-keys 
+/interface wireless set  numbers=0 ssid=ROS-6 mode=station 
 
-#scan wireless networks  con connect  to ROS-6 or ROS-7  with mikrotik password in the default wireless rprofile
+#check if you're  connected to wireless
 
 /interface bridge
 add name=bridge1
